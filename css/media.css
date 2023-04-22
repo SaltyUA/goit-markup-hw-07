@@ -1,0 +1,206 @@
+@media screen and (min-width: 428px) {
+  .container {
+    width: 428px;
+  }
+
+  .hero {
+    background-image: var(--background-hero-gradient),
+      url(../images/hero-bg-tab-1x.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--hero-background-color);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: var(--background-hero-gradient),
+        url(../images/hero-bg-tab-2x.jpeg);
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+
+  .hero-title {
+    max-width: 496px;
+    font-size: 56px;
+    line-height: 1.07;
+  }
+
+  .hero-btn {
+    margin-top: 52px;
+  }
+
+  .features-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+
+  .features-item:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .features-item {
+    width: 356px;
+  }
+
+  .team > .container,
+  .customers > .container,
+  .footer > .container {
+    width: 582px;
+  }
+
+  .team-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 64px 24px;
+  }
+
+  .customers-list {
+    gap: 72px 24px;
+  }
+
+  .customers-link {
+    width: 168px;
+  }
+
+  .footer-container {
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+
+  .footer-logo {
+    justify-content: start;
+    align-items: start;
+  }
+
+  .footer-text {
+    width: 264px;
+  }
+
+  .footer-soc-text {
+    text-align: left;
+  }
+
+  .sub-text {
+    text-align: left;
+  }
+
+  .sub-form {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .sub-input {
+    width: 264px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1158px;
+  }
+
+  .hero {
+    padding-top: 188px;
+    padding-bottom: 188px;
+  }
+
+  .hero-btn {
+    margin-top: 48px;
+  }
+
+  .features {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .features-list {
+    gap: 24px;
+  }
+
+  .features-item {
+    width: 264px;
+  }
+
+  .features-item-icon {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-color);
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+
+  .features-top-text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .products {
+    display: block;
+    padding-bottom: 120px;
+  }
+
+  .products-title {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--dark-color);
+    margin-bottom: 72px;
+  }
+
+  .products-list {
+    display: flex;
+    gap: 24px;
+  }
+
+  .team > .container,
+  .customers > .container,
+  .footer > .container {
+    width: 1158px;
+  }
+
+  .team {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .customers {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .footer-container {
+    gap: 0;
+  }
+
+  .footer-textbox {
+    margin-right: 120px;
+  }
+
+  .footer-social {
+    margin-right: 80px;
+  }
+}
