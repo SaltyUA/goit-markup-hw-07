@@ -73,5 +73,10 @@
     <symbol id="icon-subscribe" viewBox="0 0 32 32">
     <path fill="#fff" style="fill: var(--color2, #fff)" d="M32 2.667l-32 15 10.227 3.156 15.773-12.323-11.997 13.488 0.009 0.004-0.012-0.004v7.345l5.735-5.576 7.267 2.243 4.999-23.333z"></path>
     </symbol>
-  </defs>
+    <symbol id="icon-close-menu" viewBox="0 0 32 32">
+<path d="M32 3.224l-3.224-3.224-12.776 12.776-12.776-12.776-3.224 3.224 12.776 12.776-12.776 12.776 3.224 3.224 12.776-12.776 12.776 12.776 3.224-3.224-12.776-12.776 12.776-12.776z"></path>
+</symbol>
+<symbol id="icon-open-menu" viewBox="0 0 47 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4.3636" stroke="#2E2F42" d="M1.96 29.154h42.965M1.96 15.615h42.965M1.96 2.077h42.965"></path>
+</symbol>  </defs>
 </svg>

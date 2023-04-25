@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Студія</title>
+    <title>Studio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="./css/media.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <nav class="navigation">
           <a class="header-logo link" href="./index.html">
@@ -60,8 +60,85 @@
             </li>
           </ul>
         </address>
+        <button class="open-menu-btn js-open-menu" type="button">
+          <svg class="open-btn-icon" width="32" height="22">
+            <use href="./images/icons.svg#icon-open-menu"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+      <div class="mob-menu js-menu-container">
+        <button type="button" class="close-menu-btn js-close-menu">
+          <svg class="close-btn-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-menu"></use>
+          </svg>
+        </button>
+        <nav class="mob-navigation">
+          <ul class="mob-navigation-list list">
+            <li class="mob-navigation-item">
+              <a
+                class="mob-navigation-link active-page link"
+                href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li class="mob-navigation-item">
+              <a class="mob-navigation-link link" href="./portfolio.html"
+                >Portfolio</a
+              >
+            </li>
+            <li class="mob-navigation-item">
+              <a class="mob-navigation-link link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <div>
+          <address class="mob-address">
+            <ul class="mob-address-list list">
+              <li class="mob-address-item">
+                <a class="mob-tel-link link" href="tel:+110001111111">
+                  <span class="mob-address-text">+11 (000) 111-11-11</span>
+                </a>
+              </li>
+              <li class="mob-address-item">
+                <a class="mob-mail-link link" href="mailto:info@devstudio.com">
+                  <span class="mob-address-text">info@devstudio.com</span>
+                </a>
+              </li>
+            </ul>
+          </address>
+          <ul class="mob-soc-list list">
+            <li class="mob-soc-item">
+              <a href="" class="mob-soc-link link">
+                <svg class="mob-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-soc-item">
+              <a href="" class="mob-soc-link link">
+                <svg class="mob-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-soc-item">
+              <a href="" class="mob-soc-link link">
+                <svg class="mob-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mob-soc-item">
+              <a href="" class="mob-soc-link link">
+                <svg class="mob-soc-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
     <main>
       <section class="hero">
         <div class="container">
@@ -361,7 +438,7 @@
           </ul>
         </div>
       </section>
-      <!-- <div class="backdrop is-hidden" data-modal>
+      <div class="backdrop is-hidden" data-modal>
         <div class="modal">
           <button type="button" class="modal-close-btn" data-modal-close>
             <svg class="modal-btn-icon" width="8" height="8">
@@ -448,7 +525,7 @@
           </form>
         </div>
       </div>
-    </main> -->
+    </main>
     <footer class="footer">
       <div class="container footer-container">
         <div class="footer-textbox">
@@ -516,5 +593,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
