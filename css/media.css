@@ -262,6 +262,12 @@
   .modal {
     width: 408px;
   }
+
+  .filters-list {
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
 }
 
 @media screen and (min-width: 1440px) {

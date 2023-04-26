@@ -437,6 +437,8 @@ img {
 }
 
 .customers-list {
+  justify-content: center;
+  align-items: center;
   display: flex;
   flex-wrap: wrap;
   gap: 72px 16px;
@@ -854,4 +856,125 @@ img {
 
 .modal-btn:is(:hover, :focus) {
   background-color: var(--pressed-state-color);
+}
+
+/* ----------------------------PORTFOLIO-------------------------------------- */
+
+.portfolio {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+/* ----------------------------FILTERS-------------------------------------- */
+
+.filters-list {
+  margin-bottom: 48px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 24px;
+}
+
+.filters-btn {
+  padding: 12px 24px;
+
+  background-color: var(--light-color);
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--primary-brand-color);
+
+  cursor: pointer;
+
+  transition: background-color 250ms var(--cubic), box-shadow 250ms var(--cubic),
+    color 250ms var(--cubic);
+}
+
+.filters-btn:is(:hover, :focus) {
+  background-color: var(--pressed-state-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  color: var(--white-background-color);
+}
+
+/* ----------------------------PROJECTS-------------------------------------- */
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+}
+
+.projects-link {
+  display: block;
+
+  transition: box-shadow 250ms var(--cubic);
+}
+
+.projects-item {
+  background-color: var(--white-background-color);
+}
+
+.project-item-overlay {
+  position: relative;
+  overflow: hidden;
+}
+
+.projects-item-text {
+  padding: 32px 16px;
+
+  border: 1px solid var(--accent-color);
+  transition: border 250ms var(--cubic);
+}
+
+.projects-top-text {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--modal-overlay-color);
+  margin-bottom: 8px;
+}
+
+.projects-bottom-text {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.projects-link:is(:hover, :focus) {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.projects-link:is(:hover, :focus) .projects-item-text {
+  border: 1px solid var(--light-color);
+}
+
+.overlay-text {
+  padding-top: 40px;
+  padding-left: 32px;
+  padding-right: 32px;
+  background-color: var(--primary-brand-color);
+
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--light-color);
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+
+  transform: translateY(100%);
+  transition: transform 250ms var(--cubic);
+}
+
+.projects-link:is(:hover, :focus) .overlay-text {
+  transform: translate(0);
 }
