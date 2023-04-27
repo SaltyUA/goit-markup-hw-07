@@ -937,12 +937,14 @@ img {
   font-size: 20px;
   line-height: 1.2;
   color: var(--modal-overlay-color);
+
   margin-bottom: 8px;
 }
 
 .projects-bottom-text {
   font-size: 16px;
   line-height: 1.5;
+  color: var(--text-color);
 }
 
 .projects-link:is(:hover, :focus) {
@@ -962,7 +964,6 @@ img {
 
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 0.02em;
   color: var(--light-color);
 
   position: absolute;
